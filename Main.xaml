@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C99A9FAE38C_Pet_Retrieve.Bundle;assembly=C99A9FAE38C_Pet_Retr.ebftr238J2L1jeRMc2KqERV1" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C99A9FAE38C_StoreOrder_Retrieve.Bundle;assembly=C99A9FAE38C_StoreOrd.VJmjE1Ta6XF12Biqq2iBhRR2" xmlns:uiascb1="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C99A9FAE38C_Pet_Retrieve.Bundle;assembly=C99A9FAE38C_Pet_Retr.ebftr238J2L1jeRMc2KqERV1" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -125,6 +125,7 @@
       <x:String>System.Net.Security</x:String>
       <x:String>System.Net.Sockets</x:String>
       <x:String>UiPath.IntegrationService.Activities.SWEntities.C99A9FAE38C_Pet_Retrieve.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C99A9FAE38C_StoreOrder_Retrieve.Bundle</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -238,6 +239,7 @@
       <AssemblyReference>System.Net.Ping</AssemblyReference>
       <AssemblyReference>System.Net.Sockets</AssemblyReference>
       <AssemblyReference>C99A9FAE38C_Pet_Retr.ebftr238J2L1jeRMc2KqERV1</AssemblyReference>
+      <AssemblyReference>C99A9FAE38C_StoreOrd.VJmjE1Ta6XF12Biqq2iBhRR2</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="660.6666666666666,594.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -254,23 +256,23 @@
       </sap:WorkflowViewStateService.ViewState>
       <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="450,489.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
         <Sequence.Variables>
-          <Variable x:TypeArguments="uiascb:Pet_Retrieve" Name="PetID" />
+          <Variable x:TypeArguments="uiascb1:Pet_Retrieve" Name="PetID" />
         </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACnWU3W4aMRCFX2Xl680mBFVKkHIBhDSbn2YFNL2oomgwE3Aw9sYep0WId+94d0khpeJmNTMeH39zhrW4Uqinvm8NgTLoRGctRghOzmGisU6Kzs+nVOSmDPQRWItvsETRESVSPhWpuFS+1LD6HEUvnSpJWcPR/DKxLwnnErKJQwrOcM14VcYjyhDOWEAqhvgWlMOp6JALmNYS76yEpk0BNOey3N8jze20AMeXUtQe6zes9SHQQbE3ip4LpH/kNrE9sX+VfVfxxiyPAl0lYoTuXUnMupLUuyKFPhv9GBiqP/vn593zq+6gfdaPtz0PkZzCd8x6wUw1ZruxNDlUneHkhdxp++zm9K71isN7eXr7Nhg+ttLkEZ1nBRet7CT++HzQDBIvDAZyoNOkCBOt5C2uxnaB5sIErRuo6El0XkB7hjpEX1rj8X+Qa4QVZqZWZbelDJ69sm2wk9o8baJPPIGR+DEWnsBaNLK5cSWc+7LlDEqyjpVyWAZPdnn0CiUYshOQ0kZHOFMJOvK/YMbuYO9wmUNbooFStWOjZgirZlpfkW2sJCceSqzHxdEtb8EK+yDnyG+1i1A+gmYsUeHD5JXl1IZgx7B9P3xRe6VvdVia6KcqzjYbcU8zu7JuCfS5SKxPNgd9VkGqJfSc/eXR5YTLKIHjhVNLcCtG0mxdAXIBM9zF1/qyz6/pPaoJJXxHhSg5ShiA6RZ50t4/sNesStVvP7QTu1S2oUNYU3FNVNYLGYcwGHOoWtSOOOapHa+rv4SI5A7MLPCbOINx/6/B9xzCglH255yL42hMOsbf1NNWLioamz+V3uhdrgQAAA==" ConnectionId="5643cfdf-5c67-4826-a7df-9699a9fae38c" DisplayName="Get Record" sap:VirtualizedContainerService.HintSize="416,239.33333333333334" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="93d80448-c8d3-36fb-a294-db2a0542a245">
+        <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACn1U0W4aMRD8FcvPl0tI1KpBygMQaEnTcgKaVqqiyJgN53BnX+x1UoT49659RwoJjXg57azXszNj1nygoJi7ntEolAbL22s+AWFlLmYF1CBv/75N+FBXHl8Ka/5dlMDb3Ng52OGcJ/xSuaoQq7d1cNKqCpXRVB9eMnPPIsowF8g0wNwxNGwG7B5Q5hAOTVdVmKI0woJYJXwMj15ZwtpoPSQ172sjRTM3E5hT29B9A8zNPBOWeGBYKPRvaIGRx4MbXCm8m6CxMAqk3iwSoZrwm2X+Ef2hAoF0GPjayGkC9klJSDsS1ZNCBS6d/OxrrD975+ed80Gnf/apt3P53RjQKniCtOv1vID0AJSwQ2fTm6vyod+aio+/Bq3Trnp8PFXdfDw+TdgNWEd8LlrpSfjReV+gt3ChwaMVRcIyPyuU/AqrqVmCvtC+KBrFwSFv34vCkeJjcJXRDv7nQK1v9IAkjei2lVyhdG0H7ECb201IlkOhJbx4RvaseUObBkfiNJdCqkHSwsSUytI7NOXRg6iERjMTUpoQF6sjoSP3LBYUnQqQ2iyYCrSo1FkY1Fiyarz7DBR8JQkYVVCbR9Wt3pwY9kSI5bUxS1/diIJkCQxHsweiU8eE4kRhb9LyKkg9U/hSh8zthYkiOaEr9GJgbCnwdTNfn2zeDWPUrmbWtebZ0XNDKAMzqmdWlcKuSKnm+WZCLsUCdlVtfdiXdXtHLRzLGuXYESNddCcbsrP9A3vDIlRL8t4D2hVtX62D4if8C2JVv+lgVX9KpfjW2/w40juOk4/XzR9O0Oxa6IWnZakHdBghXNeCWJLWvZywYF8T6in8wW5h5DLKtPkL517rJRAFAAA=" ConnectionId="5643cfdf-5c67-4826-a7df-9699a9fae38c" DisplayName="Get Record" sap:VirtualizedContainerService.HintSize="416,239.33333333333334" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="93d80448-c8d3-36fb-a294-db2a0542a245">
           <isactr:ConnectorActivity.FieldObjects>
-            <isactr:FieldObject Name="petId" Type="FieldArgument">
+            <isactr:FieldObject Name="orderId" Type="FieldArgument">
               <isactr:FieldObject.Value>
                 <InArgument x:TypeArguments="x:Int32">1</InArgument>
               </isactr:FieldObject.Value>
             </isactr:FieldObject>
-            <isactr:FieldObject Name="Jit_Pet" Type="FieldArgument">
+            <isactr:FieldObject Name="Jit_StoreOrder" Type="FieldArgument">
               <isactr:FieldObject.Value>
-                <OutArgument x:TypeArguments="uiascb:Pet_Retrieve">[PetID]</OutArgument>
+                <OutArgument x:TypeArguments="uiascb:StoreOrder_Retrieve" />
               </isactr:FieldObject.Value>
             </isactr:FieldObject>
           </isactr:ConnectorActivity.FieldObjects>
