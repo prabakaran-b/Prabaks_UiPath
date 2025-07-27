@@ -1,4 +1,14 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C99A9FAE38C_StoreOrder_Retrieve.Bundle;assembly=C99A9FAE38C_StoreOrd.VJmjE1Ta6XF12Biqq2iBhRR2" xmlns:uiascb1="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C99A9FAE38C_Pet_Retrieve.Bundle;assembly=C99A9FAE38C_Pet_Retr.ebftr238J2L1jeRMc2KqERV1" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CAE3EFF2B08_curated_incident_Create.Bundle;assembly=CAE3EFF2B08_curated_.k452p2MXyJI1xN6g73e3hCd4" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="UiPathEventObjectId" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathEventObjectType" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathEvent" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathEventConnector" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -32,100 +42,9 @@
       <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
       <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
       <x:String>UiPath.Platform.Activities</x:String>
-      <x:String>UiPath.IntegrationService.Infrastructure.Triggers</x:String>
-      <x:String>UiPath.IntegrationService.Infrastructure.CEQL</x:String>
-      <x:String>UiPath.BAF.Infrastructure.Entity</x:String>
-      <x:String>UiPath.BAF.Infrastructure.Enums</x:String>
-      <x:String>UiPath.BAF.Infrastructure.Telemetry</x:String>
-      <x:String>UiPath.BAF.Infrastructure</x:String>
-      <x:String>UiPath.BAF.Infrastructure.Connection</x:String>
-      <x:String>UiPath.iContact.IntegrationService.Activities</x:String>
-      <x:String>UiPath.IntegrationCore.Models</x:String>
-      <x:String>UiPath.IntegrationCore.Activities</x:String>
-      <x:String>UiPath.BAF.Activities</x:String>
-      <x:String>UiPath.BAF.Infrastructure.Contracts</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CAE3EFF2B08_curated_incident_Create.Bundle</x:String>
       <x:String>System.Reflection</x:String>
-      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
-      <x:String>Microsoft.Win32.SafeHandles</x:String>
-      <x:String>System.Numerics</x:String>
-      <x:String>System.Net</x:String>
-      <x:String>System.Globalization</x:String>
-      <x:String>System.Configuration.Assemblies</x:String>
-      <x:String>System.CodeDom.Compiler</x:String>
-      <x:String>System.Buffers</x:String>
-      <x:String>System.Buffers.Text</x:String>
-      <x:String>System.Buffers.Binary</x:String>
-      <x:String>System.Threading</x:String>
-      <x:String>System.Threading.Tasks</x:String>
-      <x:String>System.Threading.Tasks.Sources</x:String>
-      <x:String>System.Text</x:String>
-      <x:String>System.Text.Unicode</x:String>
-      <x:String>System.Security</x:String>
-      <x:String>System.Security.Principal</x:String>
-      <x:String>System.Security.Permissions</x:String>
-      <x:String>System.Security.Cryptography</x:String>
-      <x:String>System.Runtime</x:String>
-      <x:String>System.Runtime.Remoting</x:String>
-      <x:String>System.Runtime.ExceptionServices</x:String>
-      <x:String>System.Runtime.ConstrainedExecution</x:String>
-      <x:String>System.Runtime.Versioning</x:String>
-      <x:String>System.Runtime.Loader</x:String>
-      <x:String>System.Runtime.Intrinsics</x:String>
-      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
-      <x:String>System.Runtime.Intrinsics.Arm</x:String>
-      <x:String>System.Runtime.Intrinsics.X86</x:String>
-      <x:String>System.Runtime.InteropServices</x:String>
-      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
-      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
-      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
-      <x:String>System.Runtime.CompilerServices</x:String>
-      <x:String>System.Resources</x:String>
-      <x:String>System.Reflection.Metadata</x:String>
-      <x:String>System.Reflection.Emit</x:String>
-      <x:String>System.IO.Enumeration</x:String>
-      <x:String>System.Diagnostics.SymbolStore</x:String>
-      <x:String>System.Diagnostics.Contracts</x:String>
-      <x:String>System.Diagnostics.CodeAnalysis</x:String>
-      <x:String>System.Diagnostics.Tracing</x:String>
-      <x:String>System.Collections.Concurrent</x:String>
-      <x:String>Internal</x:String>
-      <x:String>System.CodeDom</x:String>
-      <x:String>Microsoft.CSharp</x:String>
       <x:String>System.Linq.Expressions</x:String>
-      <x:String>System.Linq.Expressions.Interpreter</x:String>
-      <x:String>System.Dynamic</x:String>
-      <x:String>UiPath.Workflow.Runtime</x:String>
-      <x:String>System.Activities.Tracking</x:String>
-      <x:String>System.Activities.Statements.Tracking</x:String>
-      <x:String>System.Activities.Runtime</x:String>
-      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
-      <x:String>System.Activities.Runtime.Collections</x:String>
-      <x:String>System.Activities.ParallelTracking</x:String>
-      <x:String>System.Activities.Hosting</x:String>
-      <x:String>System.Activities.Persistence</x:String>
-      <x:String>System.Activities.DurableInstancing</x:String>
-      <x:String>System.ComponentModel.Design.Serialization</x:String>
-      <x:String>System.Text.RegularExpressions</x:String>
-      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
-      <x:String>System.Timers</x:String>
-      <x:String>System.ComponentModel.Design</x:String>
-      <x:String>System.Xml.Schema</x:String>
-      <x:String>System.Xml.Xsl</x:String>
-      <x:String>System.Xml.Xsl.Runtime</x:String>
-      <x:String>System.Xml.XPath</x:String>
-      <x:String>System.Xml.Resolvers</x:String>
-      <x:String>System.Xml.Serialization</x:String>
-      <x:String>Microsoft.CodeAnalysis</x:String>
-      <x:String>Microsoft.CodeAnalysis.VisualBasic</x:String>
-      <x:String>Microsoft.CodeAnalysis.VisualBasic.Syntax</x:String>
-      <x:String>Microsoft.VisualBasic.FileIO</x:String>
-      <x:String>System.Security.Authentication</x:String>
-      <x:String>System.Net.Cache</x:String>
-      <x:String>System.Net.NetworkInformation</x:String>
-      <x:String>System.Net.Security</x:String>
-      <x:String>System.Net.Sockets</x:String>
-      <x:String>UiPath.IntegrationService.Activities.SWEntities.C99A9FAE38C_Pet_Retrieve.Bundle</x:String>
-      <x:String>UiPath.IntegrationService.Activities.SWEntities.C99A9FAE38C_StoreOrder_Retrieve.Bundle</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -164,121 +83,88 @@
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>UiPath.IntegrationService.Infrastructure</AssemblyReference>
-      <AssemblyReference>UiPath.BAF.Infrastructure</AssemblyReference>
-      <AssemblyReference>UiPath.iContact.IntegrationService.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.iContact.IntegrationService</AssemblyReference>
+      <AssemblyReference>CAE3EFF2B08_curated_.k452p2MXyJI1xN6g73e3hCd4</AssemblyReference>
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
       <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
-      <AssemblyReference>System.IO.Packaging</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
-      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
-      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
-      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
-      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
-      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
-      <AssemblyReference>System.IO.Pipes</AssemblyReference>
-      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>System.Net.WebClient</AssemblyReference>
-      <AssemblyReference>System.Net.Primitives</AssemblyReference>
-      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
-      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
-      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
-      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
-      <AssemblyReference>System.Net.Requests</AssemblyReference>
-      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
-      <AssemblyReference>System.CodeDom</AssemblyReference>
-      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
-      <AssemblyReference>System.Threading</AssemblyReference>
-      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
-      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
-      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>System.Security.Claims</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
-      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
-      <AssemblyReference>System.Windows.Forms</AssemblyReference>
-      <AssemblyReference>System.Resources.Writer</AssemblyReference>
-      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
-      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
-      <AssemblyReference>System.Net.Security</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
-      <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
-      <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
-      <AssemblyReference>System.Net.NetworkInformation</AssemblyReference>
-      <AssemblyReference>System.Net.Ping</AssemblyReference>
-      <AssemblyReference>System.Net.Sockets</AssemblyReference>
-      <AssemblyReference>C99A9FAE38C_Pet_Retr.ebftr238J2L1jeRMc2KqERV1</AssemblyReference>
-      <AssemblyReference>C99A9FAE38C_StoreOrd.VJmjE1Ta6XF12Biqq2iBhRR2</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="660.6666666666666,594.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="660.6666666666666,1175.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="484,572" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="450,1152.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="INC_SysID" />
+        <Variable x:TypeArguments="x:String" Name="INC_Number" />
+        <Variable x:TypeArguments="uiascb:curated_incident_Create" Name="INC_Curated" />
+      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="450,489.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
-        <Sequence.Variables>
-          <Variable x:TypeArguments="uiascb1:Pet_Retrieve" Name="PetID" />
-        </Sequence.Variables>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACn1U0W4aMRD8FcvPl0tI1KpBygMQaEnTcgKaVqqiyJgN53BnX+x1UoT49659RwoJjXg57azXszNj1nygoJi7ntEolAbL22s+AWFlLmYF1CBv/75N+FBXHl8Ka/5dlMDb3Ng52OGcJ/xSuaoQq7d1cNKqCpXRVB9eMnPPIsowF8g0wNwxNGwG7B5Q5hAOTVdVmKI0woJYJXwMj15ZwtpoPSQ172sjRTM3E5hT29B9A8zNPBOWeGBYKPRvaIGRx4MbXCm8m6CxMAqk3iwSoZrwm2X+Ef2hAoF0GPjayGkC9klJSDsS1ZNCBS6d/OxrrD975+ed80Gnf/apt3P53RjQKniCtOv1vID0AJSwQ2fTm6vyod+aio+/Bq3Trnp8PFXdfDw+TdgNWEd8LlrpSfjReV+gt3ChwaMVRcIyPyuU/AqrqVmCvtC+KBrFwSFv34vCkeJjcJXRDv7nQK1v9IAkjei2lVyhdG0H7ECb201IlkOhJbx4RvaseUObBkfiNJdCqkHSwsSUytI7NOXRg6iERjMTUpoQF6sjoSP3LBYUnQqQ2iyYCrSo1FkY1Fiyarz7DBR8JQkYVVCbR9Wt3pwY9kSI5bUxS1/diIJkCQxHsweiU8eE4kRhb9LyKkg9U/hSh8zthYkiOaEr9GJgbCnwdTNfn2zeDWPUrmbWtebZ0XNDKAMzqmdWlcKuSKnm+WZCLsUCdlVtfdiXdXtHLRzLGuXYESNddCcbsrP9A3vDIlRL8t4D2hVtX62D4if8C2JVv+lgVX9KpfjW2/w40juOk4/XzR9O0Oxa6IWnZakHdBghXNeCWJLWvZywYF8T6in8wW5h5DLKtPkL517rJRAFAAA=" ConnectionId="5643cfdf-5c67-4826-a7df-9699a9fae38c" DisplayName="Get Record" sap:VirtualizedContainerService.HintSize="416,239.33333333333334" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="93d80448-c8d3-36fb-a294-db2a0542a245">
-          <isactr:ConnectorActivity.FieldObjects>
-            <isactr:FieldObject Name="orderId" Type="FieldArgument">
-              <isactr:FieldObject.Value>
-                <InArgument x:TypeArguments="x:Int32">1</InArgument>
-              </isactr:FieldObject.Value>
-            </isactr:FieldObject>
-            <isactr:FieldObject Name="Jit_StoreOrder" Type="FieldArgument">
-              <isactr:FieldObject.Value>
-                <OutArgument x:TypeArguments="uiascb:StoreOrder_Retrieve" />
-              </isactr:FieldObject.Value>
-            </isactr:FieldObject>
-          </isactr:ConnectorActivity.FieldObjects>
-        </isactr:ConnectorActivity>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Petid from Petrica: &quot;+PetID.ToString]" />
-      </Sequence>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Connector Name: &quot;+UiPathEventConnector]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;UiPath Event Name from Servicenow: &quot;+UiPathEvent]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;UiPath Type of Event: &quot;+UiPathEventObjectType]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;UiPath Event Object Id: &quot;+UiPathEventObjectId]" />
+      <isactr:ConnectorActivity Configuration="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" ConnectionId="2b99914f-65ee-4703-ac49-adae3eff2b08" DisplayName="Connector activity" sap:VirtualizedContainerService.HintSize="416,428" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="06ca824f-f978-3008-a925-dee245fc6614">
+        <isactr:ConnectorActivity.FieldObjects>
+          <isactr:FieldObject Name="caller_id" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">7282abf03710200044e0bfc8bcbe5d03</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="short_description" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">Issue with UiPath Automation</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="description" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:String">Hey i have created an Incident due to the login issue with uiPath</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="urgency" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int32">2</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="impact" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <InArgument x:TypeArguments="x:Int32">2</InArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="assigned_to" Type="FieldArgument" />
+          <isactr:FieldObject Name="out_sys_id" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="x:String">[INC_SysID]</OutArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="out_number" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="x:String">[INC_Number]</OutArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+          <isactr:FieldObject Name="Jit_curated_incident" Type="FieldArgument">
+            <isactr:FieldObject.Value>
+              <OutArgument x:TypeArguments="uiascb:curated_incident_Create">[INC_Curated]</OutArgument>
+            </isactr:FieldObject.Value>
+          </isactr:FieldObject>
+        </isactr:ConnectorActivity.FieldObjects>
+      </isactr:ConnectorActivity>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Incident Number: &quot;+INC_Number+&quot;, Incident SysiD: &quot;+INC_SysID+&quot;, JIT Curated id: &quot;+INC_Curated.ToString]" />
     </Sequence>
   </Sequence>
 </Activity>
