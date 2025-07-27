@@ -1,0 +1,63 @@
+{
+  "name": "Integration Service Connector Testing for Creating own integration",
+  "projectId": "5819b854-b303-448d-9f8f-4f9f927cc503",
+  "description": "Integration Service Connector Testing for Creating own integration",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Activities.RuntimeGovernance": "[1.1.7]",
+    "UiPath.ConnectionClient": "[2.0.12]",
+    "UiPath.iContact.IntegrationService.Activities": "[5.0.0-preview]",
+    "UiPath.IntegrationService.Activities": "[1.15.0]",
+    "UiPath.System.Activities": "[25.6.1]",
+    "UiPathTeam.SSHConnector.Activities": "[2.1.2]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.172.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "bd5a3498-5fe0-4c83-a9f7-1b062b471121",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
